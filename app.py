@@ -7,8 +7,14 @@ import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 from dash.exceptions import PreventUpdate
 from song_finder import find_song
+import flask
+import os
+from flask import Flask
 
-app = dash.Dash(external_stylesheets=[dbc.themes.LUX])
+server = Flask(__name__)
+STATIC_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static')
+app = dash.Dash(name=__name__, server=server,external_stylesheets=[dbc.themes.LUX])
+app.scripts.config.serve_locally = True
 
 # Load az-lyrics dataset
 all_files = glob.glob("data/*.csv")
@@ -72,7 +78,33 @@ app.layout = html.Div([
 ])
 
 page_1 = html.Div([
+        html.P(
+        'Having trouble with writing lyrics to your new song?' +
+        'Look at what the top songs on the Billboard are about to find your inspiration.'
+        ),
+        dbc.DropdownMenu(
+            [
+                dbc.DropdownMenuItem("A button", id="dropdown-button"),
+                dbc.DropdownMenuItem(
+                    "Internal link", href="/l/components/dropdown_menu"
+                ),
+                dbc.DropdownMenuItem(
+                    "Top 200 songs", href="http://localhost/textmining/top200.html", target='_blank',external_link=True
+                ),
+                dbc.DropdownMenuItem(
+                    "External relative",
+                    href="/l/components/dropdown_menu",
+                    external_link=True
+                ),
+            ],
+            label="Select the Billboard Genre"
+            ),
+        html.P("Hello", id="item-clicks", className="mt-3")
+
+
 ])
+
+
 
 page_2 = html.Div([
     html.P(
@@ -146,6 +178,10 @@ def render_song_finder_output(input_phrase, n):
 
     raise PreventUpdate
 
+
+@app.server.route('/static/<resource>')
+def serve_static(resource):
+    return flask.send_from_directory(STATIC_PATH, resource)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
