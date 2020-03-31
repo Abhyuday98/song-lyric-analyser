@@ -84,22 +84,46 @@ page_1 = html.Div([
         ),
         dbc.DropdownMenu(
             [
-                dbc.DropdownMenuItem("A button", id="dropdown-button"),
+                
                 dbc.DropdownMenuItem(
-                    "Internal link", href="/l/components/dropdown_menu"
+                    "Hot 100 songs", href="http://lyrics_analysis.surge.sh/hot100.html", target='_blank',external_link=True
                 ),
                 dbc.DropdownMenuItem(
-                    "Top 200 songs", href="http://localhost/textmining/top200.html", target='_blank',external_link=True
+                    "Top 200 songs", href="http://lyrics_analysis.surge.sh/top200.html", target='_blank',external_link=True
                 ),
                 dbc.DropdownMenuItem(
-                    "External relative",
-                    href="/l/components/dropdown_menu",
-                    external_link=True
+                    "Top Country songs", href="http://lyrics_analysis.surge.sh/country.html", target='_blank',external_link=True
                 ),
+                dbc.DropdownMenuItem(
+                    "Top Pop songs", href="http://lyrics_analysis.surge.sh/pop.html", target='_blank',external_link=True
+                ),
+
+                dbc.DropdownMenuItem(
+                    "Top R&B Hiphop songs", href="http://lyrics_analysis.surge.sh/r_n_b_hiphop.html", target='_blank',external_link=True
+                ),
+                dbc.DropdownMenuItem(
+                    "Top Rock songs", href="http://lyrics_analysis.surge.sh/rock.html", target='_blank',external_link=True
+                ),
+                dbc.DropdownMenuItem(
+                    "Top Christian songs", href="http://lyrics_analysis.surge.sh/christian.html", target='_blank',external_link=True
+                ),
+                dbc.DropdownMenuItem(
+                    "Top Holiday songs", href="http://lyrics_analysis.surge.sh/hot_holiday_songs.html", target='_blank',external_link=True
+                ),
+                dbc.DropdownMenuItem(
+                    "Top Dance Electronic songs", href="http://lyrics_analysis.surge.sh/dance_electronic.html", target='_blank',external_link=True
+                ),
+
+                dbc.DropdownMenuItem(
+                    "Hot 100 Recurrent songs", href="http://lyrics_analysis.surge.sh/hot_reccurent.html", target='_blank',external_link=True
+                ),
+                dbc.DropdownMenuItem(
+                    "Hot 100 Singles songs", href="http://lyrics_analysis.surge.sh/hot100singles.html", target='_blank',external_link=True
+                ),
+                                
             ],
             label="Select the Billboard Genre"
             ),
-        html.P("Hello", id="item-clicks", className="mt-3")
 
 
 ])
