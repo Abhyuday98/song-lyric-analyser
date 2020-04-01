@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a4c5a5c-f425-4991-aca4-ec87bb67eb1f" name="Default Changelist" comment="" />
+    <list default="true" id="1a4c5a5c-f425-4991-aca4-ec87bb67eb1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/text-mining.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/text-mining.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZNjjPqyi6shQZHgYCEK8SOrjAB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,9 +31,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app.py" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -40,7 +50,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\shrey\OneDrive\Desktop\Repos\uni\text-mining\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\shrey\OneDrive\Desktop\Repos\uni\text-mining\song-lyric-analyser\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -68,6 +78,7 @@
       <updated>1584686581326</updated>
       <workItem from="1584686583819" duration="72000" />
       <workItem from="1585112728774" duration="11252000" />
+      <workItem from="1585723519423" duration="200000" />
     </task>
     <servers />
   </component>
@@ -75,10 +86,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="185" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585112855995">
+    <state x="185" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585723720222">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="185" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1585112855995" />
+    <state x="185" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1585723720222" />
     <state x="510" y="170" key="FileChooserDialogImpl" timestamp="1585112853293">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -99,10 +110,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="723" height="189" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585124705775" />
-    <state x="555" y="58" key="SettingsEditor" timestamp="1584686655522">
+    <state x="555" y="58" key="SettingsEditor" timestamp="1585723550469">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="555" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584686655522" />
+    <state x="555" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585723550469" />
     <state x="470" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585112732271">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -110,5 +121,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/text_mining$app.coverage" NAME="app Coverage Results" MODIFIED="1585124513658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/song_lyric_analyser$app.coverage" NAME="app Coverage Results" MODIFIED="1585723723136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
