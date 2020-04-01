@@ -196,8 +196,6 @@ def render_song_finder_output(input_phrase, n):
             html.P(song),
             html.H6('Exact Phrase'),
             html.P(phrase),
-            html.H6('Youtube'),
-            html.P(phrase)
         ])
 
     raise PreventUpdate
